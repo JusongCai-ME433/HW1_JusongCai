@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=commit1.c
+SOURCEFILES_QUOTED_IF_SPACED=commit2.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/commit1.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/commit1.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/commit2.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/commit2.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/commit1.o
+OBJECTFILES=${OBJECTDIR}/commit2.o
 
 # Source Files
-SOURCEFILES=commit1.c
+SOURCEFILES=commit2.c
 
 
 CFLAGS=
@@ -106,18 +106,18 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/commit1.o: commit1.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/commit2.o: commit2.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/commit1.o.d 
-	@${RM} ${OBJECTDIR}/commit1.o 
-	@${FIXDEPS} "${OBJECTDIR}/commit1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -DPICkit3PlatformTool=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/commit1.o.d" -o ${OBJECTDIR}/commit1.o commit1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/commit2.o.d 
+	@${RM} ${OBJECTDIR}/commit2.o 
+	@${FIXDEPS} "${OBJECTDIR}/commit2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -DPICkit3PlatformTool=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/commit2.o.d" -o ${OBJECTDIR}/commit2.o commit2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 else
-${OBJECTDIR}/commit1.o: commit1.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/commit2.o: commit2.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/commit1.o.d 
-	@${RM} ${OBJECTDIR}/commit1.o 
-	@${FIXDEPS} "${OBJECTDIR}/commit1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/commit1.o.d" -o ${OBJECTDIR}/commit1.o commit1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/commit2.o.d 
+	@${RM} ${OBJECTDIR}/commit2.o 
+	@${FIXDEPS} "${OBJECTDIR}/commit2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/commit2.o.d" -o ${OBJECTDIR}/commit2.o commit2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

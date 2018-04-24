@@ -65,14 +65,14 @@ int main() {
     while(1) {
 	     // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
        // remember the core timer runs at half the sysclk
-       //_CP0_SET_COUNT(0);
+       _CP0_SET_COUNT(0);
 
-       //while (_CP0_GET_COUNT() < 12000) { // to obtain 1kHz LED
-         //while (!PORTBbits.RB4) {
-           //LATAbits.LATA4 = 0; // pin RB4 is Pushbutton, if Pushbutton is pushed, LED goes to low
-         //}
-       //}
-       //LATAINV = 0x10; // flip bits 0 and 1
+       while (_CP0_GET_COUNT() < 12000) { // to obtain 1kHz LED
+         while (!PORTBbits.RB4) {
+           LATAbits.LATA4 = 0; // pin RB4 is Pushbutton, if Pushbutton is pushed, LED goes to low
+         }
+       }
+       LATAINV = 0x10; // flip bits 0 and 1
       
     }
 }
